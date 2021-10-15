@@ -39,7 +39,7 @@ function playGame(input){
         }
     alert(userInput + " plus 100 is " + (userInput += 100));
     } else {
-        alert(userInput + " is not a number.");
+        alert(input + " is not a number.");
     }
 }
 
