@@ -106,10 +106,58 @@
     console.log(age);
 
     // new way
-    const person99 = {name: codeup, age9: 4};
+    const person99 = {name9: "codeup", age9: 4};
     const {name9, age9} = person99
     console.log(name9);
     console.log(age9);
+
+
+
+let pearlJam = [{
+    album: "ten",
+    songs: {
+        one: "alive",
+        two: "black",
+        three: "evenflo"
+
+    }
+},
+    {
+        album: "versus",
+        songs: {
+            one: "animal",
+            two: "rats",
+            three: "reviewmirror"
+        }
+    },
+    {
+        album: "vitology",
+        songs: {
+            one: "corduroy",
+            two: "betterman",
+            three: "tremorChrist"
+        }
+    }];
+
+var list = document.getElementById("list");
+
+// for loop
+    let tempArr = [];
+let renderList = (array) => {
+  for (var i in array){
+      console.log(tempArr)
+      tempArr.push(array[i].album);
+  }
+  list.innerHTML = `${tempArr[0]}, ${tempArr[1]}, ${tempArr[2]}`;
+}
+renderList(pearlJam);
+
+
+
+
+
+
+
 
 
 })();
